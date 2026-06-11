@@ -31,6 +31,7 @@ def tiao_zheng(text):
         reasoning_effort="high",
         extra_body={"thinking": {"type": "enabled"}}
     )
+    return response.choices[0].message.content
 
 
 st.set_page_config(page_title='语义转换')
